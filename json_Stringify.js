@@ -1,4 +1,7 @@
+//Json-Stringify in Javascript
+
 function jsonStringify(a){
+
     if(a === undefined){
           return null;
     }
@@ -35,14 +38,12 @@ function jsonStringify(a){
    else if(typeof a =='string'){
 	    return '"' + a + '"';
   }
-
    else if(typeof a== 'function'){
       return null;
    }
   else {
     return a;
   }
-
 }
 
 var sum=function(x){
